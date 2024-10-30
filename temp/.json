@@ -1,0 +1,111 @@
+{
+// Model Structure:
+    "model": {
+        // User
+        "userModel": {
+            "email": "temp@example.com",     // email address
+            "firstName": "XXXXXX",           // String
+            "lastName": "XXXXXX",            // String
+            "gender": "male",                // String
+            "birthday": "08-09-1997",        // Date
+            "phoneNumber": "+123 456 7890",  // String
+            "ethnicity": "Eropen/English",   // String
+            "country": "Germany",            // String
+            "password": "123456"             // String
+        },
+        // Survey
+        "surveyModel": {
+            "userId": "hx32dkkdk24k6Hk426kLKK32",   // mongoose.Schema.Types.ObjectId
+            "ipAddress": "127.0.0.1",               // String
+            "location": {
+                "country": "Japan", // String
+                "region": "Japan",  // String
+                "city": "Tokyo",    // String
+                "lat": 0.0,         // Number
+                "lng": 0.0          // Number
+            },
+            "talkingResult": {
+                "question1": "A",             // Single Character
+                "question1_second": "B",      // Single Character
+                "question2": "A",             // Single Character
+                "question2_second": "B",      // Single Character
+                "question3": "A",             // Single Character
+                "question3_second": "B",      // Single Character
+                "question4": "A",             // Single Character
+                "question4_second": "B",      // Single Character
+                "question5": "A",             // Single Character
+                "question5_second": "B",      // Single Character
+                "question6": "A",             // Single Character
+                "question6_second": "B",      // Single Character
+                "question7": "A",             // Single Character
+                "question7_second": "B"       // Single Character
+            },
+            "totalResult": "AB",               // Only two characters
+            "created_at": "10-29-2024 13:08:00"  // Date and Time
+        },
+
+        // Message
+        "messageModel": {
+            "firstName": "XXXXXX",                   // String
+            "lastName": "XXXXXX",                    // String
+            "phoneNumber": "+123 456 7890",          // String
+            "email": "temp@example.com",             // Email
+            "message": "xxxxxxxxxxxxxxxxxxxxxxxx",   // String
+            "isLooked": "true",                      // Boolean
+            "response": "XXXXXXXXXXX",               // String
+            "created_at": "10-29-2024 13:08:00"      // Date and Time
+        }
+    },
+
+    // Request Parameters:
+    "request": {
+        // Authentication
+        "userRegisterDataType":  {
+            "email": "temp@example.com",     // email address
+            "firstName": "XXXXXX",           // String
+            "lastName": "XXXXXX",            // String
+            "gender": "male",                // String
+            "birthday": "08-09-1997",        // Date
+            "phoneNumber": "+123 456 7890",  // String
+            "ethnicity": "Eropen/English",   // String
+            "country": "Germany",            // String
+            "password": "123456",            // String
+            "confirmPassword": "123456"      // String
+        },
+
+        "loginDataType": {
+            "email": "temp@example.com", // email address
+            "password": "123456"         // String
+        },
+
+        // Survey data
+        "surveyDataType": {
+            "userId": "hx32dkkdk24k6Hk426kLKK32",   // mongoose.Schema.Types.ObjectId
+            "talkingResult": {
+                "question1": "A",             // Single Character
+                "question1_second": "B",      // Single Character
+                "question2": "A",             // Single Character
+                "question2_second": "B",      // Single Character
+                "question3": "A",             // Single Character
+                "question3_second": "B",      // Single Character
+                "question4": "A",             // Single Character
+                "question4_second": "B",      // Single Character
+                "question5": "A",             // Single Character
+                "question5_second": "B",      // Single Character
+                "question6": "A",             // Single Character
+                "question6_second": "B",      // Single Character
+                "question7": "A",             // Single Character
+                "question7_second": "B"       // Single Character
+            }
+        },
+
+        // Message
+        "messageDataType": {
+            "firstName": "XXXXXX",                   // String
+            "lastName": "XXXXXX",                    // String
+            "phoneNumber": "+123 456 7890",          // String
+            "email": "temp@example.com",             // Email
+            "message": "xxxxxxxxxxxxxxxxxxxxxxxx"    // String
+        }
+    }
+}
